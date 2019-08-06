@@ -15,11 +15,11 @@ class Config:
     SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:123@localhost/pitch2'
     
 
-# class ProdConfig(Config):
-#     # simple mde  configurations
-#     SIMPLEMDE_JS_IIFE = True
-#     SIMPLEMDE_USE_CDN = True
-#     SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL")
+class ProdConfig(Config):
+    # simple mde  configurations
+    SIMPLEMDE_JS_IIFE = True
+    SIMPLEMDE_USE_CDN = True
+    SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL")
     
 # # class TestConfig(Config):
 # #     SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:123@localhost/pitches_test'
