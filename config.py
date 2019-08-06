@@ -10,9 +10,9 @@ class Config:
     MAIL_PORT = 587
     MAIL_USE_TLS = True
     SQLALCHEMY_TRACK_MODIFICATIONS=False
-#     MAIL_USERNAME = os.environ.get("MAIL_USERNAME")
-#     MAIL_PASSWORD = os.environ.get("MAIL_PASSWORD")
-#     SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:123@localhost/pitch2'
+    MAIL_USERNAME = os.environ.get("MAIL_USERNAME")
+    MAIL_PASSWORD = os.environ.get("MAIL_PASSWORD")
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:123@localhost/pitch2'
     
 
 # class ProdConfig(Config):
