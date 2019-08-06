@@ -12,20 +12,20 @@ class Config:
     SQLALCHEMY_TRACK_MODIFICATIONS=False
     MAIL_USERNAME = os.environ.get("MAIL_USERNAME")
     MAIL_PASSWORD = os.environ.get("MAIL_PASSWORD")
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:123@localhost/pitchpitch'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:123@localhost/pitch2'
     
 
 class ProdConfig(Config):
     # simple mde  configurations
     SIMPLEMDE_JS_IIFE = True
     SIMPLEMDE_USE_CDN = True
-    SQLALCHEMY_DATABASE_URI =  'postgresql+psycopg2://moringa:123@localhost/pitchpitch'
+     SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL")
     
 # class TestConfig(Config):
 #     SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:123@localhost/pitches_test'
 
 class DevConfig(Config):
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:123@localhost/pitchpitch'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:123@localhost/pitch2'
 
     DEBUG = True
 
