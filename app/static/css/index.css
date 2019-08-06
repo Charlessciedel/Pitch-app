@@ -1,0 +1,12 @@
+.jumbotron{
+    background-color: black;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+.container{
+    background-image: url('https://wallpapercave.com/wp/wp4451319.jpg')
+;}
+#test{
+    color:red;
+}
